@@ -71,11 +71,6 @@ export function canFreePrisoner(
   prisonerIsAwake,
   petDogIsPresent
 ) {
-  console.log("Hii!");
-  console.log("Hii!");
-  console.log("Hii!");
-  console.log("Hii!");
-  console.log("Hii!");
   if (petDogIsPresent) return !archerIsAwake;
   else return prisonerIsAwake && (!knightIsAwake && !archerIsAwake);
 }
