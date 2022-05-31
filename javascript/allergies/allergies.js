@@ -3,16 +3,29 @@
 // convenience to get you started writing code faster.
 //
 
-export class Allergies {
+ class Allergies {
   constructor() {
-    throw new Error('Remove this statement and implement this function');
+    this.eggs = 1;
+    this.peanuts = 2;
+    this.shellfish = 4; 
+    this.strawberries = 8;
+    this.tomatoes = 16;
+    this.chocolate = 32;
+    this.pollen = 64;
+    this.cats = 128;
   }
 
+
   list() {
-    throw new Error('Remove this statement and implement this function');
+  
+    
   }
 
   allergicTo() {
-    throw new Error('Remove this statement and implement this function');
+
   }
 }
+
+let Al = new Allergies();
+
+console.log(typeof(Al));
