@@ -63,10 +63,6 @@ const FACE_CARDS = ['jack', 'queen', 'king'];
  * @returns {Card[]} new deck where the second,
  * third, and fourth cards are the face cards
  */
-export function insertFaceCards(deck) {
-  if (deck[0] === undefined) {
-    deck[0] = undefined;
-  }
-  deck.splice(1, 0, ...FACE_CARDS);
-  return deck;
+export function insertFaceCards([card1, ...deck]) {
+  return [card1, ...FACE_CARDS, ...deck];
 }
