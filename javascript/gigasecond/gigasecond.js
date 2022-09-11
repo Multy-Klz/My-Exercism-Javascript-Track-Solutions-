@@ -3,6 +3,8 @@
 // convenience to get you started writing code faster.
 //
 
-export const gigasecond = () => {
-  return true;
+const GIGA = 10 ** 12;
+
+export const gigasecond = (date) => {
+  return new Date(date.getTime() + GIGA);
 };

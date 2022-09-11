@@ -56,7 +56,7 @@ export class TranslationService {
    * @returns {Promise<void>}
    */
   request(text) {
- let myPromise = () => new Promise((resolve, reject) => {
+    let myPromise = () => new Promise((resolve, reject) => {
       this.api.request(text, (result) => {
         result ? reject(result) : resolve();
       })
